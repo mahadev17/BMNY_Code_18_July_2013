@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myFriendRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blank_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/addFriendEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textCapWords"
+            android:lines="1"
+            android:background="@drawable/textbox_add"
+            android:paddingLeft="15dp"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/addFriendBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="7"
+            android:background="@drawable/textbox_add_btn" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/friendList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutSendBottom"
+        android:layout_below="@+id/add_view_layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        android:fastScrollEnabled="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:smoothScrollbar="true" />
+
+    <RelativeLayout
+        android:id="@+id/layoutSendBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/caption_bg"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/buttonSendView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/send_button" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

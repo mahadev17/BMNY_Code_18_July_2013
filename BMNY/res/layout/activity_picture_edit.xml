@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.tbldevelopment.dragview.DragLayer
+        android:id="@+id/layoutDrawing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageViewPicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/layoutCustomView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/textShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="test"
+            android:singleLine="true"
+            android:background="@drawable/caption_bg"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </com.tbldevelopment.dragview.DragLayer>
+
+    <LinearLayout
+        android:id="@+id/imageBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutbottomBar"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnmyFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Friends" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:text="test" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutbottomBar"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/btnUndo"
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/rotate_icon"
+            android:src="@drawable/rotate_icon" />
+
+        <Button
+            android:id="@+id/buttonSaveImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+            android:background="@drawable/down_arrow"
+            android:layout_toRightOf="@+id/btnUndo"
+            android:src="@drawable/down_arrow" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/send_btn" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonPickColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/edit_btn" />
+    
+   <Button
+        android:id="@+id/btnCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/cross_icon" />
+
+</RelativeLayout>

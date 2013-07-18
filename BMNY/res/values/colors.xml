@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<color name="PageColor">#C9D766</color>
+	<color name="blue">#0000ff</color>
+	<color name="red">#FF0000</color>
+	<color name="yellow">#FFEF00</color>
+	<color name="green">#588041</color>
+	<color name="white">#ffffffff</color>
+	<color name="black">#000000</color>
+	<color name="gray">#666666</color>
+	<color name="light_gray">#BCBCBC</color>
+	<color name="tab_bg">#0A8BB5</color>
+	<color name="transparentColor">#66666666</color>
+
+</resources>

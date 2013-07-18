@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/txtFriendName"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="20dp"
+    	android:text="Raviraj"
+    	android:layout_margin="12dp"
+    	android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/txtFriendStatus"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="15dp"
+    	android:text="Status"
+    	android:visibility="gone"
+    	android:layout_margin="12dp"
+    	android:textColor="@color/white"
+        />
+    <ImageView
+        android:id="@+id/blockImageView"
+        android:layout_width="20dp"
+    	android:layout_height="20dp"
+    	android:src="@drawable/delete_btn"
+    	android:scaleType="fitXY"
+    	android:visibility="gone"
+    	android:layout_gravity="center_vertical|right"
+        />
+
+</LinearLayout>

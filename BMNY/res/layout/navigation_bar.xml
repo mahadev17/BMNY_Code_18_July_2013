@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/nav_bar" >
+
+        <LinearLayout
+            android:id="@+id/navigationLeftBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" >
+            
+            <Button
+                android:id="@+id/navigationLeftBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_camera_icon"
+                android:visibility="gone" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navigationCenterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+            <TextView 
+                android:id="@+id/txtViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ee1e8c"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:text="Center Text"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navigationRightBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp" >
+            
+            <Button
+                android:id="@+id/navigationRightBtn"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            	android:background="@drawable/add_btn"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

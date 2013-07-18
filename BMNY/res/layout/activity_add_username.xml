@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blank_bg" >
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Pick your new username!"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        />
+    
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Username"
+        android:lines="1"
+        android:inputType="textCapWords"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="10dp"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/editTextMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Mobile No"
+        android:lines="1"
+        android:inputType="number"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="10dp"
+        android:singleLine="true" >
+    </EditText>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/next_btn_clicked"
+        />
+</LinearLayout>

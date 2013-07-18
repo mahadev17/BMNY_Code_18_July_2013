@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blank_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topbarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+    
+    
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="My Account"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                    android:id="@+id/txtlblUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_title_username"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/TextlblMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:text="@string/lbl_title_mobile"
+                    android:textColor="@color/black"
+                    android:textSize="16dp">
+                     <requestFocus />
+                    </EditText>
+
+
+
+                <EditText
+                    android:id="@+id/TextlblEmail"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:text="@string/lbl_title_email"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Who can..."
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RelativeLayout
+                android:id="@+id/layoutWhocan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/rounded_corner_bg"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/TextlblWhocan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/lbl_title_who_can"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/TextViewWhocan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Everyone"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/TextViewlbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:text="More Information"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RelativeLayout
+                android:id="@+id/layoutPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/rounded_corner_bg"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/TextlblWhocan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/lbl_title_who_can"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:background="@drawable/rounded_corner_bg"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/lbl_title_username"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+            
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Time"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"/>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/txtTimeSet"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:text="5 Sec"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <SeekBar
+                    android:id="@+id/seek1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="10"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="18dp"
+                    android:progressDrawable="@drawable/styled_progress"
+                    android:layout_gravity="center_vertical"
+                    android:thumb="@drawable/slider_btn"
+                    android:progress="1"
+                    android:indeterminate="false"/>
+            </LinearLayout>
+            
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/submit_btn" />
+            
+    	<Button
+	    android:id="@+id/btnLogout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/logout_btn" />
+    </LinearLayout>
+  </ScrollView>
+
+
+
+</LinearLayout>
